@@ -45,6 +45,10 @@ function onInput(event) {
   const searchCountry = event.target.value;
   refs.countryCard.classList.add('is-hidden');
 
+  if (!searchCountry) {
+    return;
+  }
+
   fetchCountries(searchCountry)
     .then(countriesList)
     .catch(error => {

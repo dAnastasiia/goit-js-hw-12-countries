@@ -17,6 +17,7 @@ body {
 
 .countries__item:hover {
   cursor: pointer;
+  color: blueviolet;
 }
 
 .is-hidden {
